@@ -10,14 +10,14 @@ body {
   margin: 0;
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
     Roboto, Helvetica, Arial, sans-serif;
-  background-color: #e7e4db;
+  background-color: #B6C19F;
   color: #1f1e1b;
   -webkit-font-smoothing: antialiased;
 }
 
 .page-container {
   min-height: 100vh;
-  background: radial-gradient(circle at top left, #f3efe6 0, #e7e4db 55%, #ddd7cb 100%);
+  background: radial-gradient(circle at top left, #B6C19F 0, #B6C19F 55%, #B6C19F 100%);
 }
 
 /* ================= HEADER ================= */
@@ -43,7 +43,7 @@ body {
   width: 80px;
   height: 80px;
   object-fit: cover;
-  border-radius: 18px;
+  border-radius: 50px;
   box-shadow: 0 10px 24px rgba(0, 0, 0, 0.25);
   border: 1px solid rgba(167, 143, 90, 0.65);
 }
@@ -295,4 +295,81 @@ body {
   .product-arrow {
     font-size: 2rem;
   }
+
+  html {
+  scroll-behavior: smooth;
+}
+
+/* ============================= */
+/*      SECCIÓN EMPRESA          */
+/* ============================= */
+
+.empresa-section {
+  background-color: #ffffff;
+  padding: 5rem 2rem;
+  margin-top: 4rem;
+  border-top: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.empresa-inner {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: flex;
+  gap: 3rem;
+  align-items: center;
+  justify-content: center;
+}
+
+.empresa-texto {
+  flex: 1.2;
+}
+
+.empresa-texto h2 {
+  font-size: 2.2rem;
+  font-weight: 700;
+  color: #1f1e1b;
+  margin-bottom: 1.5rem;
+}
+
+.empresa-texto p {
+  font-size: 1.05rem;
+  line-height: 1.8;
+  color: #4b4a46;
+  margin-bottom: 1.2rem;
+}
+
+.empresa-imagen {
+  flex: 1;
+  text-align: center;
+}
+
+.empresa-img {
+  border-radius: 14px;
+  object-fit: cover;
+  width: 100%;
+  max-width: 550px;
+  height: auto;
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.18);
+  border: 1px solid rgba(167, 143, 90, 0.35);
+}
+
+/* Responsive Section Empresa */
+@media (max-width: 900px) {
+  .empresa-inner {
+    flex-direction: column-reverse;
+    text-align: center;
+  }
+
+  .empresa-texto h2 {
+    font-size: 1.9rem;
+  }
+
+  .empresa-img {
+    max-width: 90%;
+  }
+}
+
+
+
+
 }

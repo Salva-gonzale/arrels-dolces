@@ -2,7 +2,7 @@
 
 import Image from "next/image";
 
-export default function Home() {
+export default function HomeE() {
   return (
     <main className="page-container">
       {/* HEADER */}
@@ -10,7 +10,7 @@ export default function Home() {
         {/* Logo */}
         <div className="logo">
           <Image
-            src="/logo.png"
+            src="/logo_arrdols1.png"
             alt="Jingle Sweets by Arrels Dolces"
             width={80}
             height={80}
@@ -21,12 +21,17 @@ export default function Home() {
 
         {/* Menú de navegación */}
         <nav className="main-nav">
-          <a href="#">Producto</a>
-          <a href="#">Empresa</a>
-          <a href="#">Contacto</a>
+          {/* lleva al inicio de la página */}
+          <a href="#top">Producto</a>
+
+          {/* hace scroll a la sección Empresa */}
+          <a href="#empresa">Empresa</a>
+
+          {/* de momento lo dejamos como ancla vacía o lo puedes apuntar a otra sección */}
+          <a href="#contacto">Contacto</a>
         </nav>
 
-        {/* Teléfono + iconos */}
+        {/* Correo */}
         <div className="header-actions">
           <span className="phone">
             <p>arrelsdolces@gmail.com</p>
@@ -36,6 +41,9 @@ export default function Home() {
           </button>
         </div>
       </header>
+
+      {/* Ancla superior para “Producto” */}
+      <div id="top" />
 
       {/* LÍNEA SEPARADORA */}
       <div className="header-divider" />
@@ -87,6 +95,9 @@ export default function Home() {
           </article>
         </div>
       </section>
+
+
+      
     </main>
   );
 }
