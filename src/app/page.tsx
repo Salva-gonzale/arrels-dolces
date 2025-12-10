@@ -24,11 +24,7 @@ export default function HomeE() {
           {/* lleva al inicio de la página */}
           <a href="#top">Producto</a>
 
-          {/* hace scroll a la sección Empresa */}
-          <a href="#empresa">Empresa</a>
-
-          {/* de momento lo dejamos como ancla vacía o lo puedes apuntar a otra sección */}
-          <a href="#contacto">Contacto</a>
+         
         </nav>
 
         {/* Correo */}
