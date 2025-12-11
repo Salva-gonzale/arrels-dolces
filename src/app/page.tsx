@@ -69,12 +69,11 @@ export default function HomeE() {
         <h1 className="section-title">Arrels Dolçes</h1>
 
         <p className="section-description">
-          Presentamos una selecta y equilibrada propuesta, en la que combinamos
-          nuevas propuestas de galletas extraordinariamente diferentes, que
-          destacan por ser sabores intensos. Añadimos una selección de pastas
-          artesanas para quedar bien en cualquier situación y nuestras clásicas
-          y originales Delicias de Tolosa, que no podían faltar para completar
-          una oferta muy diferente y especial.
+          Presentamos una propuesta selecta y bien equilibrada, donde incorporamos 
+          nuevas variedades de galletas con sabores intensos y claramente diferenciadores. 
+          A esta selección sumamos nuestras pastas artesanas, perfectas para quedar bien en 
+          cualquier ocasión, y las inconfundibles Delicias de Tolosa, que no podían faltar para 
+          completar una oferta única y realmente especial.
         </p>
       </section>
 
@@ -114,7 +113,7 @@ export default function HomeE() {
             <button
               className="product-button"
               onClick={() =>
-                alert("Envia un correo a arrelsdolces@gmail.com")
+                alert("Envia un correo a arrelsdolces@gmail.com Indicanos cual de nuestros productos quieres, si ")
               }
             >
               Haz tu pedido
