@@ -106,8 +106,8 @@ export default function HomeE() {
               ❯
             </button>
 
-            <h4 className="product-name">Selección de Galletas 200g</h4>
-            <p className="product-weight">200 g/ud.</p>
+            <h4 className="product-name">CAJA 6 UNIDADES</h4>
+            <p className="product-weight">Unidad 2'45€</p>
             <p className="product-price">9,99 €</p>
 
             {/* BOTÓN CON ALERTA */}
