@@ -1,8 +1,30 @@
 "use client";
 
+import { useState } from "react";
 import Image from "next/image";
 
 export default function HomeE() {
+  // Imágenes del slider dentro de la tarjeta
+  const images = [
+    "/galleta1.png",
+    "/galleta2.png",
+    "/galleta3.png",
+    "/galleta4.png",
+    "/imagen5.png",
+    "/imagen6.png",
+    "/producto123.png",
+  ];
+
+  const [index, setIndex] = useState(0);
+
+  const nextImage = () => {
+    setIndex((prev) => (prev + 1) % images.length);
+  };
+
+  const prevImage = () => {
+    setIndex((prev) => (prev - 1 + images.length) % images.length);
+  };
+
   return (
     <main className="page-container">
       {/* HEADER */}
@@ -23,8 +45,6 @@ export default function HomeE() {
         <nav className="main-nav">
           {/* lleva al inicio de la página */}
           <a href="#top">Producto</a>
-
-         
         </nav>
 
         {/* Correo */}
@@ -63,17 +83,28 @@ export default function HomeE() {
         {/* Rombo */}
         <div className="products-ornament" />
 
-        {/* Tarjeta centrada */}
+        {/* Tarjeta centrada con slider */}
         <div className="product-showcase">
           <article className="product-card">
+            {/* Flecha izquierda */}
+            <button className="arrow-btn left" onClick={prevImage}>
+              ❮
+            </button>
+
+            {/* Imagen del producto (slider) */}
             <div className="product-image-wrapper">
               <Image
-                src="/producto.png"
-                alt="Selección de Galletas 200g"
+                src={images[index]}
+                alt={`Selección de Galletas 200g - imagen ${index + 1}`}
                 fill
                 className="product-image"
               />
             </div>
+
+            {/* Flecha derecha */}
+            <button className="arrow-btn right" onClick={nextImage}>
+              ❯
+            </button>
 
             <h4 className="product-name">Selección de Galletas 200g</h4>
             <p className="product-weight">200 g/ud.</p>
@@ -91,9 +122,6 @@ export default function HomeE() {
           </article>
         </div>
       </section>
-
-
-      
     </main>
   );
 }
